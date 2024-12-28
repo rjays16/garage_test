@@ -15,7 +15,7 @@
                     <a class="nav-link" href="#">BLOG</a>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link active" href="#" id="servicesDropdown">
+                    <a class="nav-link" href="#" id="servicesDropdown">
                         SERVICES
                     </a>
                     <div class="dropdown-menu mega-dropdown-menu">
@@ -41,7 +41,7 @@
                     <a class="nav-link" href="#">GALLERY</a>
                 </li>
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link active" href="#" id="locationsDropdown">
+                    <a class="nav-link" href="#" id="locationsDropdown">
                         LOCATION
                     </a>
                     <div class="dropdown-menu mega-dropdown-menu">
