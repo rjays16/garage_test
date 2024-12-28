@@ -31,7 +31,6 @@
         </div>
     </div>
 </nav>
-    </div>
 
 <style>
         .header {
@@ -61,6 +60,21 @@
             color: white !important;
             font-weight: 500;
             padding: 0 15px !important;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #ffd700;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
         }
         .phone-number {
             color: #ffd700;
