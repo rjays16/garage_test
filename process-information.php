@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'email' => $_POST['email']
     ];
     
-    header('Location: checkout-form2.php');
+    header('Location: checkout-form.php');
     exit();
 }
 ?>
