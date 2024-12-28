@@ -5,7 +5,7 @@
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 33%"></div>
             </div>
             
-            <form action="process-checkout1.php" method="POST">
+            <form action="process-information.php" method="POST">
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label for="firstName" class="form-label">First Name</label>
