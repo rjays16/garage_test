@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'test_db';
+$dbname = 'test_garage_db';
 $username = 'root';
 $password = '';
 

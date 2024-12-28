@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'card_exp_date' => $_POST['expDate']
     ];
     
-    $stmt = $pdo->prepare("INSERT INTO customers (first_name, last_name, address, city, state, phone, email) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO customer_details (first_name, last_name, address, city, state, phone, email) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->execute([
         $_SESSION['customer']['first_name'],
         $_SESSION['customer']['last_name'],
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $customerId = $pdo->lastInsertId();
     
-    $stmt = $pdo->prepare("INSERT INTO payments (card_type, card_number, card_exp_date) VALUES (?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO payment_details (card_type, card_number, card_exp_date) VALUES (?, ?, ?)");
     $stmt->execute([
         $_SESSION['payment']['card_type'],
         $_SESSION['payment']['card_number'],
